@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -6,7 +8,7 @@ export default function Home() {
         "@type": "WebSite",
         "@id": "https://giftcardmallbalance.credit/#website",
         url: "https://giftcardmallbalance.credit/",
-        name: "GiftActive",
+        name: "GiftCardMallBalance.credit",
         description:
           "Independent educational guides to prepaid gift card balances, activation and usage.",
         inLanguage: "en-US",
@@ -14,7 +16,7 @@ export default function Home() {
       {
         "@type": "Organization",
         "@id": "https://giftcardmallbalance.credit/#organization",
-        name: "GiftActive",
+        name: "GiftCardMallBalance.credit",
         url: "https://giftcardmallbalance.credit/",
         description:
           "Independent publisher of educational prepaid gift card information.",
@@ -45,7 +47,7 @@ export default function Home() {
         mainEntityOfPage: {
           "@id": "https://giftcardmallbalance.credit/#webpage",
         },
-        author: { "@type": "Organization", name: "GiftActive" },
+        author: { "@type": "Organization", name: "GiftCardMallBalance.credit" },
         publisher: {
           "@id": "https://giftcardmallbalance.credit/#organization",
         },
@@ -80,9 +82,18 @@ export default function Home() {
       />
       <header className="header">
         <div className="container nav">
-          <a className="brand" href="#top" aria-label="GiftActive home">
-            <span className="brand-icon">G</span>
-            <span>GiftActive</span>
+          <a className="brand" href="#top" aria-label="GiftCardMallBalance.credit home">
+            <span className="brand-icon">
+              <Image
+                src="/logo.png"
+                alt="GiftCardMallBalance.credit Logo"
+                width={40}
+                height={40}
+                className="brand-logo-img"
+                priority
+              />
+            </span>
+            <span>GiftCardMallBalance<span className="brand-domain-suffix">.credit</span></span>
           </a>
 
           <nav className="nav-links" aria-label="Main navigation">
@@ -158,7 +169,7 @@ export default function Home() {
             <div className="notice-icon">!</div>
             <p>
               <strong>Third-party resource:</strong>{" "}
-              GiftActive is not the official GiftCardMall or MyGift portal
+              GiftCardMallBalance.credit is not the official GiftCardMall or MyGift portal
               and has no connection with Blackhawk Network, Visa, Mastercard,
               American Express, any financial institution, merchant or
               specific card provider. Always adhere to the directions
@@ -622,7 +633,7 @@ export default function Home() {
               <article className="info-card">
                 <h3>Data this site does not require</h3>
                 <p>
-                  GiftActive does not require your full card number, PIN,
+                  GiftCardMallBalance.credit does not require your full card number, PIN,
                   CVV, password or any other confidential payment
                   credentials. Do not transmit those details through public
                   forms, comment sections or direct messages.
@@ -700,9 +711,9 @@ export default function Home() {
               </details>
 
               <details>
-                <summary>Is GiftActive an official GiftCardMall service?</summary>
+                <summary>Is GiftCardMallBalance.credit an official GiftCardMall service?</summary>
                 <p>
-                  No. GiftActive is an independently operated educational
+                  No. GiftCardMallBalance.credit is an independently operated educational
                   website and is not connected to GiftCardMall, MyGift,
                   Visa or any individual card provider.
                 </p>
@@ -735,7 +746,20 @@ export default function Home() {
         <div className="container">
           <div className="footer-top">
             <div>
-              <div className="footer-brand">GiftActive</div>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
+                <span className="brand-icon" style={{ width: "32px", height: "32px", borderRadius: "10px" }}>
+                  <Image
+                    src="/logo.png"
+                    alt="GiftCardMallBalance.credit Logo"
+                    width={32}
+                    height={32}
+                    className="brand-logo-img"
+                  />
+                </span>
+                <div className="footer-brand" style={{ marginBottom: 0 }}>
+                  GiftCardMallBalance<span className="brand-domain-suffix">.credit</span>
+                </div>
+              </div>
               <p>Independent prepaid gift card educational resource.</p>
             </div>
 
@@ -750,7 +774,7 @@ export default function Home() {
 
           <div className="disclaimer">
             <strong>Disclaimer:</strong>{" "}
-            GiftActive is an independently operated informational website. It
+            GiftCardMallBalance.credit is an independently operated informational website. It
             is not affiliated with or endorsed by GiftCardMall, MyGift,
             Blackhawk Network, Visa, Mastercard, American Express, any
             financial institution, retailer or card provider. Card terms and
@@ -759,7 +783,7 @@ export default function Home() {
           </div>
 
           <div className="copyright">
-            © 2026 GiftActive. All rights reserved.
+            © 2026 GiftCardMallBalance.credit. All rights reserved.
           </div>
         </div>
       </footer>

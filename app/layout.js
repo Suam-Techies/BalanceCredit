@@ -11,19 +11,19 @@ export const metadata = {
   title: "GiftCardMall/Mygift | Activate Gift Card | Verify Your Card",
   description:
     "Discover GiftCardMall/Mygift balance tips, card activation steps, Visa transaction fundamentals and helpful responses to frequent prepaid gift card inquiries.",
-  authors: [{ name: "GiftActive Editorial Team" }],
+  authors: [{ name: "GiftCardMallBalance.credit Editorial Team" }],
   openGraph: {
     type: "website",
-    title: "GiftCardMall/Mygift | Activate Gift Card | Verify Your Card",
+    title: "GiftCardMallBalance.credit | Activate Gift Card | Verify Balance",
     description:
       "A hands-on independent guide to prepaid gift card balances, activation, Visa transactions and common GiftCardMall/Mygift questions.",
     url: "https://giftcardmallbalance.credit/",
-    siteName: "GiftActive",
+    siteName: "GiftCardMallBalance.credit",
     locale: "en_US",
   },
   twitter: {
     card: "summary",
-    title: "GiftCardMall/Mygift Guide",
+    title: "GiftCardMallBalance.credit Guide",
     description:
       "Understand prepaid gift card balances, activation procedures, Visa payments and typical card issues.",
   },
