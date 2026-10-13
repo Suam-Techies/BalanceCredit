@@ -86,14 +86,14 @@ export default function Home() {
             <span className="brand-icon">
               <Image
                 src="/logo.png"
-                alt="GiftCardMallBalance.credit Logo"
+                alt="GiftCardMallBalance"
                 width={40}
                 height={40}
                 className="brand-logo-img"
                 priority
               />
             </span>
-            <span>GiftCardMallBalance<span className="brand-domain-suffix">.credit</span></span>
+            <span>GiftCardMallBalance</span>
           </a>
 
           <nav className="nav-links" aria-label="Main navigation">
@@ -169,7 +169,7 @@ export default function Home() {
             <div className="notice-icon">!</div>
             <p>
               <strong>Third-party resource:</strong>{" "}
-              GiftCardMallBalance.credit is not the official GiftCardMall or MyGift portal
+              GiftCardMallBalance is not the official GiftCardMall or MyGift portal
               and has no connection with Blackhawk Network, Visa, Mastercard,
               American Express, any financial institution, merchant or
               specific card provider. Always adhere to the directions
@@ -633,7 +633,7 @@ export default function Home() {
               <article className="info-card">
                 <h3>Data this site does not require</h3>
                 <p>
-                  GiftCardMallBalance.credit does not require your full card number, PIN,
+                  GiftCardMallBalance does not require your full card number, PIN,
                   CVV, password or any other confidential payment
                   credentials. Do not transmit those details through public
                   forms, comment sections or direct messages.
@@ -711,9 +711,9 @@ export default function Home() {
               </details>
 
               <details>
-                <summary>Is GiftCardMallBalance.credit an official GiftCardMall service?</summary>
+                <summary>Is GiftCardMallBalance an official GiftCardMall service?</summary>
                 <p>
-                  No. GiftCardMallBalance.credit is an independently operated educational
+                  No. GiftCardMallBalance is an independently operated educational
                   website and is not connected to GiftCardMall, MyGift,
                   Visa or any individual card provider.
                 </p>
@@ -750,14 +750,14 @@ export default function Home() {
                 <span className="brand-icon" style={{ width: "32px", height: "32px", borderRadius: "10px" }}>
                   <Image
                     src="/logo.png"
-                    alt="GiftCardMallBalance.credit Logo"
+                    alt="GiftCardMallBalance"
                     width={32}
                     height={32}
                     className="brand-logo-img"
                   />
                 </span>
                 <div className="footer-brand" style={{ marginBottom: 0 }}>
-                  GiftCardMallBalance<span className="brand-domain-suffix">.credit</span>
+                  GiftCardMallBalance
                 </div>
               </div>
               <p>Independent prepaid gift card educational resource.</p>
@@ -774,7 +774,7 @@ export default function Home() {
 
           <div className="disclaimer">
             <strong>Disclaimer:</strong>{" "}
-            GiftCardMallBalance.credit is an independently operated informational website. It
+            GiftCardMallBalance is an independently operated informational website. It
             is not affiliated with or endorsed by GiftCardMall, MyGift,
             Blackhawk Network, Visa, Mastercard, American Express, any
             financial institution, retailer or card provider. Card terms and
