@@ -7,9 +7,44 @@ const inter = Inter({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://giftcardmallbalance.credit"),
   title: "GiftCardMall/Mygift | Activate Gift Card | Verify Your Card",
   description:
     "Discover GiftCardMall/Mygift balance tips, card activation steps, Visa transaction fundamentals and helpful responses to frequent prepaid gift card inquiries.",
+  authors: [{ name: "GiftActive Editorial Team" }],
+  openGraph: {
+    type: "website",
+    title: "GiftCardMall/Mygift | Activate Gift Card | Verify Your Card",
+    description:
+      "A hands-on independent guide to prepaid gift card balances, activation, Visa transactions and common GiftCardMall/Mygift questions.",
+    url: "https://giftcardmallbalance.credit/",
+    siteName: "GiftActive",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: "GiftCardMall/Mygift Guide",
+    description:
+      "Understand prepaid gift card balances, activation procedures, Visa payments and typical card issues.",
+  },
+  alternates: {
+    canonical: "https://giftcardmallbalance.credit/",
+    languages: {
+      "en-US": "https://giftcardmallbalance.credit/",
+      en: "https://giftcardmallbalance.credit/",
+      "x-default": "https://giftcardmallbalance.credit/",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+  other: {
+    "theme-color": "#faf7fc",
+  },
 };
 
 export default function RootLayout({ children }) {

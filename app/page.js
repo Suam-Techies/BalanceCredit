@@ -1,6 +1,83 @@
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://giftcardmallbalance.credit/#website",
+        url: "https://giftcardmallbalance.credit/",
+        name: "GiftActive",
+        description:
+          "Independent educational guides to prepaid gift card balances, activation and usage.",
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://giftcardmallbalance.credit/#organization",
+        name: "GiftActive",
+        url: "https://giftcardmallbalance.credit/",
+        description:
+          "Independent publisher of educational prepaid gift card information.",
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://giftcardmallbalance.credit/#webpage",
+        url: "https://giftcardmallbalance.credit/",
+        name: "GiftCardMall/Mygift | Activate Gift Card | Verify Your Card",
+        description:
+          "Discover GiftCardMall/Mygift balance tips, card activation steps, Visa transaction fundamentals and helpful responses to frequent prepaid gift card inquiries.",
+        isPartOf: { "@id": "https://giftcardmallbalance.credit/#website" },
+        about: [
+          { "@type": "Thing", name: "GiftCardMall/Mygift" },
+          { "@type": "Thing", name: "Prepaid gift card balance" },
+          { "@type": "Thing", name: "Gift card activation" },
+          { "@type": "Thing", name: "Prepaid Visa cards" },
+        ],
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "Article",
+        "@id": "https://giftcardmallbalance.credit/#article",
+        headline:
+          "GiftCardMall/Mygift | Activate Gift Card | Verify Your Card",
+        description:
+          "An independent guide to prepaid gift card balance checks, activation, Visa usage and common transaction questions.",
+        mainEntityOfPage: {
+          "@id": "https://giftcardmallbalance.credit/#webpage",
+        },
+        author: { "@type": "Organization", name: "GiftActive" },
+        publisher: {
+          "@id": "https://giftcardmallbalance.credit/#organization",
+        },
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://giftcardmallbalance.credit/#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://giftcardmallbalance.credit/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Gift Card Guide",
+            item: "https://giftcardmallbalance.credit/",
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="header">
         <div className="container nav">
           <a className="brand" href="#top" aria-label="GiftActive home">
